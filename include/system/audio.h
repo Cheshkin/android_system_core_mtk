@@ -680,9 +680,6 @@ enum {
     AUDIO_DEVICE_OUT_AUX_LINE                  = 0x200000,
     /* limited-output speaker device for acoustic safety */
     AUDIO_DEVICE_OUT_SPEAKER_SAFE              = 0x400000,
-//#ifdef MTK_AUDIO
-//    AUDIO_DEVICE_OUT_FM_TX = AUDIO_DEVICE_OUT_FM,
-//#endif
 #ifdef QCOM_HARDWARE
     AUDIO_DEVICE_OUT_FM_TX                     = 0x1000000,
     AUDIO_DEVICE_OUT_PROXY                     = 0x2000000,
@@ -752,7 +749,6 @@ enum {
     AUDIO_DEVICE_IN_SPDIF                 = AUDIO_DEVICE_BIT_IN | 0x10000,
     AUDIO_DEVICE_IN_BLUETOOTH_A2DP        = AUDIO_DEVICE_BIT_IN | 0x20000,
     AUDIO_DEVICE_IN_LOOPBACK              = AUDIO_DEVICE_BIT_IN | 0x40000,
-//    AUDIO_DEVICE_IN_FM                    = AUDIO_DEVICE_IN_FM_TUNER, // FM   (analog or digital)
 #ifdef QCOM_HARDWARE
     AUDIO_DEVICE_IN_PROXY                 = AUDIO_DEVICE_BIT_IN | 0x100000,
     AUDIO_DEVICE_IN_FM_RX                 = AUDIO_DEVICE_BIT_IN | 0x200000,

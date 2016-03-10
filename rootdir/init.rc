@@ -620,7 +620,8 @@ service encrypt /system/bin/vdc --wait cryptfs enablecrypto inplace default
 service bootanim /system/bin/bootanimation
     class core
     user graphics
-    group graphics audio
+	# MTK
+    group graphics media audio
     disabled
     oneshot
 
